@@ -35,12 +35,12 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderHolder>
 
         Order order = orderList.get(position);
 
-        holder.orderNumber.setText(" ID OS: " + order.getOrderNumber());
-        holder.status.setText(" Status: " + order.getStatus());
-        holder.nomeCliente.setText(" Cliente: " + order.getNomeCliente());
-        holder.enderecoCliente.setText(" Endereço: " + order.getEnderecoCliente());
-        holder.nomePrestador.setText(" Prestador: " + order.getNomePrestador());
-        holder.nomeEmpresa.setText(" Empresa: " + order.getNomeEmpresa());
+        holder.orderNumber.setText(order.getOrderNumber());
+        holder.status.setText(order.getStatus());
+        holder.nomeCliente.setText(order.getNomeCliente());
+        holder.enderecoCliente.setText(order.getEnderecoCliente());
+        holder.nomePrestador.setText(order.getNomePrestador());
+        holder.nomeEmpresa.setText(order.getNomeEmpresa());
 
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
