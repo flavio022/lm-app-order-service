@@ -1,0 +1,18 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: 'prestador'
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3307/db_prest
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5Dialect

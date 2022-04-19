@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="6dp"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="399dp"
+        android:layout_height="266dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="405dp"
+            android:layout_height="match_parent"
+            android:background="#03A9F4">
+
+
+            <TextView
+                android:id="@+id/orderNumber_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número da OS:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="5dp" />
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OrderNumber"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/orderNumber_name"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/status_order_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/orderNumber"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/status_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status_os"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/status_order_name"
+                tools:layout_editor_absoluteX="5dp" />
+
+            <TextView
+                android:id="@+id/nome_cliente_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cliente:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/status_order"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/nome_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nome_cliente"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nome_cliente_name"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/enderecoCliente_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endereço do cliente:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nome_cliente"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/enderecoCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enderecoCliente"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/enderecoCliente_name"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/nome_prestador_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nome_prestador"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nome_prestador"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/nome_prestador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prestador:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/enderecoCliente"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/nomeEmpresa_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nomeEmpresa"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nomeEmpresa"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/nomeEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empresa:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nome_prestador_nome"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
